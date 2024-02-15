@@ -1,0 +1,15 @@
+name = "Weapons-Balance-VSM"
+prefix = "wb_vsm"
+mainprefix = "z"
+
+[properties]
+author = "johnb43"
+url = "https://github.com/johnb432"
+
+[files]
+include = [
+    "CHANGELOG.md",
+    "mod.cpp",
+    "LICENSE",
+    "README.md"
+]
