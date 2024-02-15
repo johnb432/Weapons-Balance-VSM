@@ -1,14 +1,156 @@
-2024-02-15T11:54:05.116919Z TRACE ThreadId(01) version: 1.11.1
-2024-02-15T11:54:05.117000Z TRACE ThreadId(01) platform: windows
-2024-02-15T11:54:05.117019Z TRACE ThreadId(01) args: [
+2024-02-15T17:38:43.900029Z TRACE ThreadId(01) version: 1.11.1
+2024-02-15T17:38:43.900104Z TRACE ThreadId(01) platform: windows
+2024-02-15T17:38:43.900114Z TRACE ThreadId(01) args: [
     "hemtt",
-    "build",
+    "release",
 ]
-2024-02-15T11:54:05.117718Z TRACE ThreadId(01) using temporary folder: "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM"
-2024-02-15T11:54:05.117744Z TRACE ThreadId(01) using project folder: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM"
-2024-02-15T11:54:05.117758Z TRACE ThreadId(01) using out folder: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout"
-2024-02-15T11:54:05.118027Z TRACE ThreadId(01) using build folder: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout\\build"
-2024-02-15T11:54:05.126550Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM" } } } } } }] } } }
-2024-02-15T11:54:05.127747Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM" } } } } } }] } } }
-2024-02-15T11:54:05.142222Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM" } } } } } }] } } }
-2024-02-15T11:54:05.149479Z ERROR ThreadId(01) Failed to find a git repository with at least one commit, if you are not using git add the following to your project.toml
+2024-02-15T17:38:43.900724Z TRACE ThreadId(01) using temporary folder: "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM"
+2024-02-15T17:38:43.900736Z TRACE ThreadId(01) using project folder: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM"
+2024-02-15T17:38:43.900741Z TRACE ThreadId(01) using out folder: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout"
+2024-02-15T17:38:43.900935Z TRACE ThreadId(01) using build folder: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout\\release"
+2024-02-15T17:38:43.952139Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM" } } } } } }] } } }
+2024-02-15T17:38:43.952601Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM" } } } } } }] } } }
+2024-02-15T17:38:43.954921Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM" } } } } } }] } } }
+2024-02-15T17:38:43.959810Z  INFO ThreadId(01) Config loaded for Weapons-Balance-VSM 1.0.0.0-8c7476c1
+2024-02-15T17:38:43.959853Z TRACE ThreadId(01) Scanning C:\Users\John\Documents\GitHub\Weapons-Balance-VSM\addons for addons
+2024-02-15T17:38:43.960097Z TRACE ThreadId(01) phase: init (Hooks) (start)
+2024-02-15T17:38:43.960122Z TRACE ThreadId(01) no hooks folder
+2024-02-15T17:38:43.960129Z TRACE ThreadId(01) phase: init (Hooks) (done)
+2024-02-15T17:38:43.960132Z TRACE ThreadId(01) phase: init (Rapifier) (start)
+2024-02-15T17:38:43.960135Z TRACE ThreadId(01) phase: init (Rapifier) (done)
+2024-02-15T17:38:43.960138Z TRACE ThreadId(01) phase: init (SQF) (start)
+2024-02-15T17:38:43.960141Z TRACE ThreadId(01) phase: init (SQF) (done)
+2024-02-15T17:38:43.960143Z TRACE ThreadId(01) phase: init (Binarize) (start)
+2024-02-15T17:38:43.963842Z TRACE ThreadId(01) junction link "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\source\\z\\wb_vsm\\addons\\main" => "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\addons\\main"
+2024-02-15T17:38:43.974536Z TRACE ThreadId(01) junction link "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\source\\x\\cba" => "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\include\\x\\cba"
+2024-02-15T17:38:43.983900Z TRACE ThreadId(01) phase: init (Binarize) (done)
+2024-02-15T17:38:43.983913Z TRACE ThreadId(01) phase: init (ArmaScriptCompiler) (start)
+2024-02-15T17:38:43.983921Z TRACE ThreadId(01) using asc folder at "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\asc"
+2024-02-15T17:38:43.984142Z TRACE ThreadId(01) phase: init (ArmaScriptCompiler) (done)
+2024-02-15T17:38:43.984149Z TRACE ThreadId(01) phase: init (Files) (start)
+2024-02-15T17:38:43.984153Z TRACE ThreadId(01) phase: init (Files) (done)
+2024-02-15T17:38:43.984155Z TRACE ThreadId(01) phase: init (Sign) (start)
+2024-02-15T17:38:43.984158Z TRACE ThreadId(01) phase: init (Sign) (done)
+2024-02-15T17:38:43.984161Z TRACE ThreadId(01) phase: check (Hooks) (start)
+2024-02-15T17:38:43.984164Z TRACE ThreadId(01) phase: check (Hooks) (done)
+2024-02-15T17:38:43.984167Z TRACE ThreadId(01) phase: check (Rapifier) (start)
+2024-02-15T17:38:43.984169Z TRACE ThreadId(01) phase: check (Rapifier) (done)
+2024-02-15T17:38:43.984172Z TRACE ThreadId(01) phase: check (SQF) (start)
+2024-02-15T17:38:43.984174Z TRACE ThreadId(01) phase: check (SQF) (done)
+2024-02-15T17:38:43.984177Z TRACE ThreadId(01) phase: check (Binarize) (start)
+2024-02-15T17:38:43.984180Z TRACE ThreadId(01) phase: check (Binarize) (done)
+2024-02-15T17:38:43.984182Z TRACE ThreadId(01) phase: check (ArmaScriptCompiler) (start)
+2024-02-15T17:38:43.984185Z TRACE ThreadId(01) phase: check (ArmaScriptCompiler) (done)
+2024-02-15T17:38:43.984187Z TRACE ThreadId(01) phase: check (Files) (start)
+2024-02-15T17:38:43.984190Z TRACE ThreadId(01) phase: check (Files) (done)
+2024-02-15T17:38:43.984192Z TRACE ThreadId(01) phase: check (Sign) (start)
+2024-02-15T17:38:43.985113Z TRACE ThreadId(01) phase: check (Sign) (done)
+2024-02-15T17:38:43.985120Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
+2024-02-15T17:38:43.985127Z TRACE ThreadId(01) phase: pre_build (Hooks) (done)
+2024-02-15T17:38:43.985130Z TRACE ThreadId(01) phase: pre_build (Rapifier) (start)
+2024-02-15T17:38:43.989352Z TRACE ThreadId(01) Located with parent: vfs /addons/main/script_component.hpp
+2024-02-15T17:38:43.989700Z TRACE ThreadId(01) Located with parent: vfs /addons/main/script_mod.hpp
+2024-02-15T17:38:43.990017Z TRACE ThreadId(01) Located with parent: vfs /addons/main/script_version.hpp
+2024-02-15T17:38:43.990283Z TRACE ThreadId(01) Located with absolute path: "/x/cba/addons/main/script_macros_common.hpp"
+2024-02-15T17:38:43.997801Z TRACE ThreadId(01) Located with parent: vfs /addons/main/helmets/CfgHelmets.hpp
+2024-02-15T17:38:43.999043Z TRACE ThreadId(01) Located with parent: vfs /addons/main/uniforms/CfgUniBDU.hpp
+2024-02-15T17:38:43.999611Z TRACE ThreadId(01) Located with parent: vfs /addons/main/uniforms/CfgUniCrye.hpp
+2024-02-15T17:38:44.001474Z TRACE ThreadId(01) Located with parent: vfs /addons/main/uniforms/CfgUniMassif.hpp
+2024-02-15T17:38:44.002574Z TRACE ThreadId(01) Located with parent: vfs /addons/main/vests/CfgVests.hpp
+2024-02-15T17:38:44.099281Z  INFO ThreadId(01) Rapified 1 addon configs
+2024-02-15T17:38:44.099313Z TRACE ThreadId(01) phase: pre_build (Rapifier) (done)
+2024-02-15T17:38:44.099319Z TRACE ThreadId(01) phase: pre_build (SQF) (start)
+2024-02-15T17:38:44.413215Z  INFO ThreadId(01) Validated 0 sqf files
+2024-02-15T17:38:44.416532Z TRACE ThreadId(01) phase: pre_build (SQF) (done)
+2024-02-15T17:38:44.416546Z TRACE ThreadId(01) phase: pre_build (Binarize) (start)
+2024-02-15T17:38:44.416553Z TRACE ThreadId(01) phase: pre_build (Binarize) (done)
+2024-02-15T17:38:44.416556Z TRACE ThreadId(01) phase: pre_build (ArmaScriptCompiler) (start)
+2024-02-15T17:38:44.416737Z TRACE ThreadId(01) unpacking "asc.exe" to "C:\\Users\\John\\AppData\\Local\\Temp\\hemtt\\Users_John_Documents_GitHub_Weapons-Balance-VSM\\asc\\asc.exe"
+2024-02-15T17:38:44.424297Z DEBUG ThreadId(01) ASC Preprocess took 4
+2024-02-15T17:38:44.551498Z DEBUG ThreadId(01) ASC took 126
+2024-02-15T17:38:44.551595Z  INFO ThreadId(01) Compiled 0 sqf files
+2024-02-15T17:38:44.551705Z TRACE ThreadId(01) phase: pre_build (ArmaScriptCompiler) (done)
+2024-02-15T17:38:44.551713Z TRACE ThreadId(01) phase: pre_build (Files) (start)
+2024-02-15T17:38:44.551717Z TRACE ThreadId(01) phase: pre_build (Files) (done)
+2024-02-15T17:38:44.551720Z TRACE ThreadId(01) phase: pre_build (Sign) (start)
+2024-02-15T17:38:44.551723Z TRACE ThreadId(01) phase: pre_build (Sign) (done)
+2024-02-15T17:38:44.551727Z TRACE ThreadId(01) phase: build (start)
+2024-02-15T17:38:44.553268Z DEBUG ThreadId(01) creating "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout\\release\\addons"
+2024-02-15T17:38:44.553430Z DEBUG ThreadId(01) building "addons/main" => "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout\\release\\addons\\wb_vsm_main.pbo"
+2024-02-15T17:38:44.555533Z TRACE ThreadId(01) adding file "script_version.hpp"
+2024-02-15T17:38:44.555627Z TRACE ThreadId(01) adding file "config.bin"
+2024-02-15T17:38:44.556155Z TRACE ThreadId(01) adding file "script_component.hpp"
+2024-02-15T17:38:44.556307Z TRACE ThreadId(01) adding file "script_mod.hpp"
+2024-02-15T17:38:44.556535Z TRACE ThreadId(01) adding file "ui\\logo_weapons_balance.paa"
+2024-02-15T17:38:44.556689Z TRACE ThreadId(01) adding file "helmets\\CfgHelmets.hpp"
+2024-02-15T17:38:44.556841Z TRACE ThreadId(01) adding file "uniforms\\CfgUniCrye.hpp"
+2024-02-15T17:38:44.556991Z TRACE ThreadId(01) adding file "uniforms\\CfgUniBDU.hpp"
+2024-02-15T17:38:44.557141Z TRACE ThreadId(01) adding file "uniforms\\CfgUniMassif.hpp"
+2024-02-15T17:38:44.557287Z TRACE ThreadId(01) adding file "vests\\CfgVests.hpp"
+2024-02-15T17:38:44.558045Z  INFO ThreadId(01) Built 1 PBOs
+2024-02-15T17:38:44.558050Z TRACE ThreadId(01) phase: build (done)
+2024-02-15T17:38:44.558054Z TRACE ThreadId(01) phase: post_build (Hooks) (start)
+2024-02-15T17:38:44.558057Z TRACE ThreadId(01) phase: post_build (Hooks) (done)
+2024-02-15T17:38:44.558060Z TRACE ThreadId(01) phase: post_build (Rapifier) (start)
+2024-02-15T17:38:44.558063Z TRACE ThreadId(01) phase: post_build (Rapifier) (done)
+2024-02-15T17:38:44.558065Z TRACE ThreadId(01) phase: post_build (SQF) (start)
+2024-02-15T17:38:44.558068Z TRACE ThreadId(01) phase: post_build (SQF) (done)
+2024-02-15T17:38:44.558070Z TRACE ThreadId(01) phase: post_build (Binarize) (start)
+2024-02-15T17:38:44.558073Z TRACE ThreadId(01) phase: post_build (Binarize) (done)
+2024-02-15T17:38:44.558075Z TRACE ThreadId(01) phase: post_build (ArmaScriptCompiler) (start)
+2024-02-15T17:38:44.558078Z TRACE ThreadId(01) phase: post_build (ArmaScriptCompiler) (done)
+2024-02-15T17:38:44.558080Z TRACE ThreadId(01) phase: post_build (Files) (start)
+2024-02-15T17:38:44.584154Z DEBUG ThreadId(01) copying "/LICENSE" => "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout\\release\\LICENSE"
+2024-02-15T17:38:44.585050Z DEBUG ThreadId(01) copying "/CHANGELOG.md" => "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout\\release\\CHANGELOG.md"
+2024-02-15T17:38:44.585679Z DEBUG ThreadId(01) copying "/mod.cpp" => "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout\\release\\mod.cpp"
+2024-02-15T17:38:44.586247Z DEBUG ThreadId(01) copying "/README.md" => "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout\\release\\README.md"
+2024-02-15T17:38:44.613325Z  INFO ThreadId(01) Copied 4 files
+2024-02-15T17:38:44.613338Z TRACE ThreadId(01) phase: post_build (Files) (done)
+2024-02-15T17:38:44.613342Z TRACE ThreadId(01) phase: post_build (Sign) (start)
+2024-02-15T17:38:44.613345Z TRACE ThreadId(01) phase: post_build (Sign) (done)
+2024-02-15T17:38:44.613349Z TRACE ThreadId(01) phase: pre_release (Hooks) (start)
+2024-02-15T17:38:44.613352Z TRACE ThreadId(01) phase: pre_release (Hooks) (done)
+2024-02-15T17:38:44.613357Z TRACE ThreadId(01) phase: pre_release (Rapifier) (start)
+2024-02-15T17:38:44.613360Z TRACE ThreadId(01) phase: pre_release (Rapifier) (done)
+2024-02-15T17:38:44.613363Z TRACE ThreadId(01) phase: pre_release (SQF) (start)
+2024-02-15T17:38:44.613365Z TRACE ThreadId(01) phase: pre_release (SQF) (done)
+2024-02-15T17:38:44.613368Z TRACE ThreadId(01) phase: pre_release (Binarize) (start)
+2024-02-15T17:38:44.613370Z TRACE ThreadId(01) phase: pre_release (Binarize) (done)
+2024-02-15T17:38:44.613373Z TRACE ThreadId(01) phase: pre_release (ArmaScriptCompiler) (start)
+2024-02-15T17:38:44.613375Z TRACE ThreadId(01) phase: pre_release (ArmaScriptCompiler) (done)
+2024-02-15T17:38:44.613378Z TRACE ThreadId(01) phase: pre_release (Files) (start)
+2024-02-15T17:38:44.613380Z TRACE ThreadId(01) phase: pre_release (Files) (done)
+2024-02-15T17:38:44.613382Z TRACE ThreadId(01) phase: pre_release (Sign) (start)
+2024-02-15T17:38:44.632678Z DEBUG ThreadId(01) signing "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\.hemttout\\release\\addons\\wb_vsm_main.pbo.wb_vsm_1.0.0.0-8c7476c1.bisign"
+2024-02-15T17:38:44.635482Z TRACE ThreadId(01) phase: pre_release (Sign) (done)
+2024-02-15T17:38:44.635494Z TRACE ThreadId(01) phase: release (start)
+2024-02-15T17:38:44.635502Z TRACE ThreadId(01) using releases folder: "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\releases"
+2024-02-15T17:38:44.635682Z DEBUG ThreadId(01) creating release at "C:\\Users\\John\\Documents\\GitHub\\Weapons-Balance-VSM\\releases\\wb_vsm-latest.zip"
+2024-02-15T17:38:44.636046Z TRACE ThreadId(01) zip: creating directory "@wb_vsm/addons"
+2024-02-15T17:38:44.636325Z TRACE ThreadId(01) zip: adding file "@wb_vsm/addons/wb_vsm_main.pbo"
+2024-02-15T17:38:44.640522Z TRACE ThreadId(01) zip: adding file "@wb_vsm/addons/wb_vsm_main.pbo.wb_vsm_1.0.0.0-8c7476c1.bisign"
+2024-02-15T17:38:44.640821Z TRACE ThreadId(01) zip: adding file "@wb_vsm/CHANGELOG.md"
+2024-02-15T17:38:44.641078Z TRACE ThreadId(01) zip: creating directory "@wb_vsm/keys"
+2024-02-15T17:38:44.641198Z TRACE ThreadId(01) zip: adding file "@wb_vsm/keys/wb_vsm_1.0.0.0-8c7476c1.bikey"
+2024-02-15T17:38:44.641391Z TRACE ThreadId(01) zip: adding file "@wb_vsm/LICENSE"
+2024-02-15T17:38:44.641603Z TRACE ThreadId(01) zip: adding file "@wb_vsm/mod.cpp"
+2024-02-15T17:38:44.641828Z TRACE ThreadId(01) zip: adding file "@wb_vsm/README.md"
+2024-02-15T17:38:44.642481Z  INFO ThreadId(01) Created release: C:\Users\John\Documents\GitHub\Weapons-Balance-VSM\releases\wb_vsm-latest.zip
+2024-02-15T17:38:44.642494Z  INFO ThreadId(01) Created release: C:\Users\John\Documents\GitHub\Weapons-Balance-VSM\releases\wb_vsm-1.0.0.0-8c7476c1.zip
+2024-02-15T17:38:44.643044Z TRACE ThreadId(01) phase: release (done)
+2024-02-15T17:38:44.643054Z TRACE ThreadId(01) phase: post_release (Hooks) (start)
+2024-02-15T17:38:44.643059Z TRACE ThreadId(01) phase: post_release (Hooks) (done)
+2024-02-15T17:38:44.643062Z TRACE ThreadId(01) phase: post_release (Rapifier) (start)
+2024-02-15T17:38:44.643065Z TRACE ThreadId(01) phase: post_release (Rapifier) (done)
+2024-02-15T17:38:44.643068Z TRACE ThreadId(01) phase: post_release (SQF) (start)
+2024-02-15T17:38:44.643070Z TRACE ThreadId(01) phase: post_release (SQF) (done)
+2024-02-15T17:38:44.643073Z TRACE ThreadId(01) phase: post_release (Binarize) (start)
+2024-02-15T17:38:44.643076Z TRACE ThreadId(01) phase: post_release (Binarize) (done)
+2024-02-15T17:38:44.643079Z TRACE ThreadId(01) phase: post_release (ArmaScriptCompiler) (start)
+2024-02-15T17:38:44.643081Z TRACE ThreadId(01) phase: post_release (ArmaScriptCompiler) (done)
+2024-02-15T17:38:44.643084Z TRACE ThreadId(01) phase: post_release (Files) (start)
+2024-02-15T17:38:44.643087Z TRACE ThreadId(01) phase: post_release (Files) (done)
+2024-02-15T17:38:44.643090Z TRACE ThreadId(01) phase: post_release (Sign) (start)
+2024-02-15T17:38:44.643092Z TRACE ThreadId(01) phase: post_release (Sign) (done)
+2024-02-15T17:38:44.643131Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
+2024-02-15T17:38:44.643178Z TRACE ThreadId(01) wrote 0 ci annotations to .hemttout/ci_annotations.txt

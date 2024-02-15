@@ -2,82 +2,127 @@ class VestItem;
 class Vest_Camo_Base: ItemCore {
     class ItemInfo;
 };
-class BRM_IBA_base: Vest_Camo_Base {
-    class ItemInfo: VestItem {};
-};
 
-#define VEST(type1,type2,load)\
+#define VEST(type1,type2)\
 class type1: type2 {\
-    class ItemInfo: ItemInfo {\
-        containerClass = load;\
+    class ItemInfo: VestItem {\
+        mass = 100;\
+        containerClass = "Supply200";\
     };\
 }
 
-#define VEST_MASS(type1,type2,load,massVest)\
-class type1: type2 {\
-    mass = massVest;\
-    class ItemInfo: ItemInfo {\
-        containerClass = load;\
-    };\
-}
-
-class BMR_MLBVARMOR_BROWN_RFL: BRM_IBA_base {
-    class ItemInfo: ItemInfo {
-        mass = 100;
+class VSM_MBSS_Green: Vest_Camo_Base {
+    class ItemInfo: VestItem {
+        mass = 80;
+        containerClass = "Supply150";
     };
 };
 
-VEST_MASS(BMR_MLBVARMOR_BROWN_RFL,BRM_IBA_base,"Supply140",100);
-VEST(BMR_MLBVARMOR_BROWN_GL,BMR_MLBVARMOR_BROWN_RFL,"Supply140");
-VEST(BMR_MLBVARMOR_BROWN_MG,BMR_MLBVARMOR_BROWN_RFL,"Supply140");
-VEST(BMR_MLBVARMOR_BROWN_TL,BMR_MLBVARMOR_BROWN_RFL,"Supply140");
+VEST(VSM_LBT1961_Black,Vest_Camo_Base);
 
-VEST(BMR_MLBV_BROWN_RFL,Vest_Camo_Base,"Supply140");
-VEST(BMR_MLBV_BROWN_GL,BMR_MLBV_BROWN_RFL,"Supply140");
-VEST(BMR_MLBV_BROWN_MG,BMR_MLBV_BROWN_RFL,"Supply140");
-VEST(BMR_MLBV_BROWN_TL,BMR_MLBV_BROWN_RFL,"Supply140");
+VEST(VSM_MBSS_PACA,Vest_Camo_Base);
 
+VEST(VSM_FAPC_Breacher_AOR1,ItemCore);
+VEST(VSM_FAPC_MG_AOR1,ItemCore);
+VEST(VSM_FAPC_Operator_AOR1,ItemCore);
+VEST(VSM_CarrierRig_Breacher_AOR1,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Gunner_AOR1,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Operator_AOR1,Vest_Camo_Base);
+VEST(VSM_LBT6094_breacher_AOR1,Vest_Camo_Base);
+VEST(VSM_LBT6094_MG_AOR1,Vest_Camo_Base);
+VEST(VSM_LBT6094_operator_AOR1,Vest_Camo_Base);
+VEST(VSM_RAV_Breacher_AOR1,Vest_Camo_Base);
+VEST(VSM_RAV_MG_AOR1,Vest_Camo_Base);
+VEST(VSM_RAV_operator_AOR1,Vest_Camo_Base);
 
-VEST_MASS(BRM_IBA_RFL,BRM_IBA_base,"Supply140",100);
-VEST(BRM_IBA_AR,BRM_IBA_RFL,"Supply140");
-VEST(BRM_IBA_COM,BRM_IBA_RFL,"Supply140");
-VEST(BRM_IBA_MG,BRM_IBA_RFL,"Supply140");
-
-VEST_MASS(BRM_IBA_ALICE_RFL,BRM_IBA_base,"Supply140",100);
-VEST(BRM_IBA_ALICE_AR,BRM_IBA_ALICE_RFL,"Supply140");
-VEST(BRM_IBA_ALICE_COM,BRM_IBA_ALICE_RFL,"Supply140");
-VEST(BRM_IBA_ALICE_MG,BRM_IBA_ALICE_RFL,"Supply140");
-VEST(BRM_IBA_ALICE_SF1,BRM_IBA_ALICE_RFL,"Supply140");
-VEST(BRM_IBA_ALICE_SF2,BRM_IBA_ALICE_RFL,"Supply140");
-VEST(BRM_IBA_ALICE_TL,BRM_IBA_ALICE_RFL,"Supply140");
-
-
-class MBSS_base: Vest_Camo_Base {
-    class ItemInfo: ItemInfo {};
-};
-VEST(BRM_LBT_BROWN_RFL,MBSS_base,"Supply140");
-VEST(BRM_LBT_BROWN_GL,BRM_LBT_BROWN_RFL,"Supply140");
-VEST(BRM_LBT_BROWN_GLAK,BRM_LBT_BROWN_RFL,"Supply140");
-VEST(BRM_LBT_BROWN_MG,BRM_LBT_BROWN_RFL,"Supply140");
-VEST(BRM_LBT_BROWN_RFLAK,BRM_LBT_BROWN_RFL,"Supply140");
-VEST(BRM_LBT_BROWN_TL,BRM_LBT_BROWN_RFL,"Supply140");
-VEST(BRM_LBT_BROWN_TLAK,BRM_LBT_BROWN_RFL,"Supply140");
+VEST(VSM_FAPC_Breacher_M81,ItemCore);
+VEST(VSM_FAPC_MG_M81,ItemCore);
+VEST(VSM_FAPC_Operator_M81,ItemCore);
+VEST(VSM_CarrierRig_Breacher_M81,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Gunner_M81,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Operator_M81,Vest_Camo_Base);
+VEST(VSM_LBT6094_breacher_M81,Vest_Camo_Base);
+VEST(VSM_LBT6094_MG_M81,Vest_Camo_Base);
+VEST(VSM_LBT6094_operator_M81,Vest_Camo_Base);
+VEST(VSM_RAV_Breacher_M81,Vest_Camo_Base);
+VEST(VSM_RAV_MG_M81,Vest_Camo_Base);
+VEST(VSM_RAV_operator_M81,Vest_Camo_Base);
 
 
-VEST(BRM_RRV_GREEN_RFL,MBSS_base,"Supply140");
-VEST(BRM_RRV_GREEN_MG,BRM_RRV_GREEN_RFL,"Supply140");
-VEST_MASS(BRM_RRV_GREEN_GL,BRM_RRV_GREEN_RFL,"Supply140",100);
-VEST_MASS(BRM_RRV_GREEN_REC1,BRM_RRV_GREEN_RFL,"Supply140",100);
-VEST_MASS(BRM_RRV_GREEN_REC2,BRM_RRV_GREEN_RFL,"Supply140",100);
-VEST_MASS(BRM_RRV_GREEN_RECLEAD,BRM_RRV_GREEN_RFL,"Supply140",100);
-VEST_MASS(BRM_RRV_GREEN_RECMED,BRM_RRV_GREEN_RFL,"Supply140",100);
-VEST_MASS(BRM_RRV_GREEN_TL,BRM_RRV_GREEN_RFL,"Supply140",100);
+VEST(VSM_FAPC_Breacher_Multicam,ItemCore);
+VEST(VSM_FAPC_MG_Multicam,ItemCore);
+VEST(VSM_FAPC_Operator_Multicam,ItemCore);
+VEST(VSM_CarrierRig_Breacher_Multicam,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Gunner_Multicam,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Operator_Multicam,Vest_Camo_Base);
+VEST(VSM_LBT6094_breacher_Multicam,Vest_Camo_Base);
+VEST(VSM_LBT6094_MG_Multicam,Vest_Camo_Base);
+VEST(VSM_LBT6094_operator_Multicam,Vest_Camo_Base);
+VEST(VSM_RAV_Breacher_Multicam,Vest_Camo_Base);
+VEST(VSM_RAV_MG_Multicam,Vest_Camo_Base);
+VEST(VSM_RAV_operator_Multicam,Vest_Camo_Base);
 
+VEST(VSM_FAPC_Breacher_MulticamTropic,ItemCore);
+VEST(VSM_FAPC_MG_MulticamTropic,ItemCore);
+VEST(VSM_FAPC_Operator_MulticamTropic,ItemCore);
+VEST(VSM_CarrierRig_Breacher_multicamTropic,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Gunner_multicamTropic,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Operator_multicamTropic,Vest_Camo_Base);
+VEST(VSM_LBT6094_breacher_multicamTropic,Vest_Camo_Base);
+VEST(VSM_LBT6094_MG_multicamTropic,Vest_Camo_Base);
+VEST(VSM_LBT6094_operator_multicamTropic,Vest_Camo_Base);
+VEST(VSM_RAV_Breacher_MulticamTropic,Vest_Camo_Base);
+VEST(VSM_RAV_MG_MulticamTropic,Vest_Camo_Base);
+VEST(VSM_RAV_operator_MulticamTropic,Vest_Camo_Base);
 
-VEST(BRM_6B_BROWN_RFL,Vest_Camo_Base,"Supply140");
-VEST(BRM_6B_BROWN_COM,BRM_6B_BROWN_RFL,"Supply140");
+VEST(VSM_FAPC_Breacher_OCP,ItemCore);
+VEST(VSM_FAPC_MG_OCP,ItemCore);
+VEST(VSM_FAPC_Operator_OCP,ItemCore);
+VEST(VSM_CarrierRig_Breacher_OCP,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Gunner_OCP,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Operator_OCP,Vest_Camo_Base);
+VEST(VSM_LBT6094_breacher_OCP,Vest_Camo_Base);
+VEST(VSM_LBT6094_MG_OCP,Vest_Camo_Base);
+VEST(VSM_LBT6094_operator_OCP,Vest_Camo_Base);
+VEST(VSM_RAV_Breacher_OCP,Vest_Camo_Base);
+VEST(VSM_RAV_MG_OCP,Vest_Camo_Base);
+VEST(VSM_RAV_operator_OCP,Vest_Camo_Base);
 
-VEST_MASS(BRM_SOVWEB_BROWN_SL,Vest_Camo_Base,"Supply140",22);
-VEST(BRM_SOVWEB_BROWN_COM,BRM_SOVWEB_BROWN_SL,"Supply140");
+VEST(VSM_FAPC_Breacher_OGA,ItemCore);
+VEST(VSM_FAPC_MG_OGA,ItemCore);
+VEST(VSM_FAPC_Operator_OGA,ItemCore);
+VEST(VSM_CarrierRig_Breacher_OGA,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Gunner_OGA,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Operator_OGA,Vest_Camo_Base);
+VEST(VSM_LBT6094_breacher_OGA,Vest_Camo_Base);
+VEST(VSM_LBT6094_MG_OGA,Vest_Camo_Base);
+VEST(VSM_LBT6094_operator_OGA,Vest_Camo_Base);
+VEST(VSM_RAV_Breacher_OGA,Vest_Camo_Base);
+VEST(VSM_RAV_MG_OGA,Vest_Camo_Base);
+VEST(VSM_RAV_operator_OGA,Vest_Camo_Base);
 
-VEST_MASS(BRM_Protec_GREEN_HeavyRFL,Vest_Camo_Base,"Supply140",140);
+VEST(VSM_FAPC_Breacher_OGA_OD,ItemCore);
+VEST(VSM_FAPC_MG_OGA_OD,ItemCore);
+VEST(VSM_FAPC_Operator_OGA_OD,ItemCore);
+VEST(VSM_CarrierRig_Breacher_OGA_OD,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Gunner_OGA_OD,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Operator_OGA_OD,Vest_Camo_Base);
+VEST(VSM_LBT6094_breacher_OGA_OD,Vest_Camo_Base);
+VEST(VSM_LBT6094_MG_OGA_OD,Vest_Camo_Base);
+VEST(VSM_LBT6094_operator_OGA_OD,Vest_Camo_Base);
+VEST(VSM_RAV_Breacher_OGA_OD,Vest_Camo_Base);
+VEST(VSM_RAV_MG_OGA_OD,Vest_Camo_Base);
+VEST(VSM_RAV_operator_OGA_OD,Vest_Camo_Base);
+
+VEST(VSM_FAPC_Breacher_ProjectHonor,ItemCore);
+VEST(VSM_FAPC_MG_ProjectHonor,ItemCore);
+VEST(VSM_FAPC_Operator_ProjectHonor,ItemCore);
+VEST(VSM_CarrierRig_Breacher_ProjectHonor,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Gunner_ProjectHonor,Vest_Camo_Base);
+VEST(VSM_CarrierRig_Operator_ProjectHonor,Vest_Camo_Base);
+VEST(VSM_LBT6094_breacher_ProjectHonor,Vest_Camo_Base);
+VEST(VSM_LBT6094_MG_ProjectHonor,Vest_Camo_Base);
+VEST(VSM_LBT6094_operator_ProjectHonor,Vest_Camo_Base);
+VEST(VSM_RAV_Breacher_ProjectHonor,Vest_Camo_Base);
+VEST(VSM_RAV_MG_ProjectHonor,Vest_Camo_Base);
+VEST(VSM_RAV_operator_ProjectHonor,Vest_Camo_Base);

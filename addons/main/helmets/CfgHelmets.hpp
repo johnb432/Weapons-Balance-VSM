@@ -3,73 +3,100 @@ class H_HelmetB: ItemCore {
 };
 class VSM_base_fast_helmet: H_HelmetB {
     ace_hearing_protection = 0.75;
-    mass = 20;
+    mass = 30;
     class ItemInfo: ItemInfo {
-        mass = 20;
+        mass = 30;
+    };
+};
+class VSM_base_highcutslick: H_HelmetB {
+    mass = 30;
+    class ItemInfo: ItemInfo {
+        mass = 30;
     };
 };
 
-
-class VSM_base_highcutslick: {
-    mass = 20;
-    class ItemInfo: ItemInfo {
-        mass = 20;
-    };
-};
-
-
-
-#define HELMET(type)\
+#define HELMET(type,weight)\
 class type: ItemCore {\
-    mass = 40;\
-    class ItemInfo: HeadgearItem {\
-        mass = 40;\
-    };\
-}
-
-HELMET(VSM_Mich2000_AOR1);
-HELMET(VSM_Mich2000_M81);
-HELMET(VSM_Mich2000_MulticamTropic);
-HELMET(VSM_Mich2000_Multicam);
-HELMET(VSM_Mich2000_ocp);
-HELMET(VSM_Mich2000_CamoSprayOD);
-HELMET(VSM_Mich2000_OGA_OD);
-HELMET(VSM_Mich2000_OGA);
-HELMET(VSM_Mich2000_ProjectHonor);
-HELMET(VSM_Mich2000_CamoSprayTAN);
-
-HELMET(VSM_Mich2000_2_aor1);
-HELMET(VSM_Mich2000_2_M81);
-HELMET(VSM_Mich2000_2_MulticamTropic);
-HELMET(VSM_Mich2000_2_Multicam);
-HELMET(VSM_Mich2000_2_OCP);
-HELMET(VSM_Mich2000_2_CamoSprayOD);
-HELMET(VSM_Mich2000_2_OGA_OD);
-HELMET(VSM_Mich2000_2_OGA);
-HELMET(VSM_Mich2000_2_ProjectHonor);
-HELMET(VSM_Mich2000_2_CamoSprayTAN);
-
-
-//HELMET(Alpine_Helmet_IA);
-//HELMET(VSM_Mich2000_AOR1);
-
-/*
-#define HELMET(type,armorValue)\
-class type: ItemCore {\
-    class ItemInfo: HeadgearItem {\
-        mass = 40;\
-        class HitpointsProtectionInfo {\
-            class Head {\
-                armor = armorValue;\
-            };\
-        };\
-    };\
-}
-
-#define HELMET_COMS(type,armorValue)\
-class type: ItemCore {\
-    ace_hearing_lowerVolume = 0.5;\
     ace_hearing_protection = 0.75;\
+    mass = weight;\
+    class ItemInfo: HeadgearItem {\
+        mass = weight;\
+    };\
+}
+
+HELMET(VSM_Mich2000_AOR1,40);
+HELMET(VSM_Mich2000_M81,40);
+HELMET(VSM_Mich2000_MulticamTropic,40);
+HELMET(VSM_Mich2000_Multicam,40);
+HELMET(VSM_Mich2000_ocp,40);
+HELMET(VSM_Mich2000_CamoSprayOD,40);
+HELMET(VSM_Mich2000_OGA_OD,40);
+HELMET(VSM_Mich2000_OGA,40);
+HELMET(VSM_Mich2000_ProjectHonor,40);
+HELMET(VSM_Mich2000_CamoSprayTAN,40);
+
+HELMET(VSM_Mich2000_2_aor1,40);
+HELMET(VSM_Mich2000_2_M81,40);
+HELMET(VSM_Mich2000_2_MulticamTropic,40);
+HELMET(VSM_Mich2000_2_Multicam,40);
+HELMET(VSM_Mich2000_2_OCP,40);
+HELMET(VSM_Mich2000_2_CamoSprayOD,40);
+HELMET(VSM_Mich2000_2_OGA_OD,40);
+HELMET(VSM_Mich2000_2_OGA,40);
+HELMET(VSM_Mich2000_2_ProjectHonor,40);
+HELMET(VSM_Mich2000_2_CamoSprayTAN,40);
+
+
+HELMET(VSM_OPS,30);
+HELMET(VSM_OPS_aor1,30);
+HELMET(VSM_Black_OPS,30);
+HELMET(VSM_M81_OPS,30);
+HELMET(VSM_OPS_multicam,30);
+HELMET(VSM_MulticamTropic_OPS,30);
+HELMET(VSM_OPS_ocp,30);
+HELMET(VSM_OD_spray_OPS,30);
+HELMET(VSM_OGA_OD_OPS,30);
+HELMET(VSM_oga_OPS,30);
+HELMET(VSM_ProjectHonor_OPS,30);
+HELMET(VSM_Tan_spray_OPS,30);
+
+HELMET(VSM_OPS_2,30);
+HELMET(VSM_OPS_2_AOR1,30);
+HELMET(VSM_Black_OPS_2,30);
+HELMET(VSM_M81_OPS_2,30);
+HELMET(VSM_OPS_2_multicam,30);
+HELMET(VSM_MulticamTropic_OPS_2,30);
+HELMET(VSM_OPS_2_ocp,30);
+HELMET(VSM_OD_Spray_OPS_2,30);
+HELMET(VSM_OGA_OD_OPS_2,30);
+HELMET(VSM_oga_OPS_2,30);
+HELMET(VSM_ProjectHonor_OPS_2,30);
+HELMET(VSM_Tan_spray_OPS_2,30);
+
+
+#define HELMET_PARENT(type1,type2,weight)\
+class type1: type2 {\
+    ace_hearing_protection = 0.75;\
+    mass = weight;\
+    class ItemInfo: HeadgearItem {\
+        mass = weight;\
+    };\
+}
+
+HELMET_PARENT(Alpine_opscore,VSM_M81_OPS,30);
+HELMET_PARENT(AOR2_opscore,VSM_M81_OPS,30);
+HELMET_PARENT(ARD_opscore,VSM_M81_OPS,30);
+HELMET_PARENT(BLK2_opscore,VSM_M81_OPS,30);
+HELMET_PARENT(White_opscore,VSM_M81_OPS,30);
+
+HELMET_PARENT(Alpine_opscore_2,VSM_M81_OPS_2,30);
+HELMET_PARENT(AOR2_opscore_2,VSM_M81_OPS_2,30);
+HELMET_PARENT(ARD_opscore_2,VSM_M81_OPS_2,30);
+HELMET_PARENT(BLK_opscore_2,VSM_M81_OPS_2,30);
+HELMET_PARENT(White_opscore_2,VSM_M81_OPS_2,30);
+
+#define HELMET_HP(type,armorValue)\
+class type: ItemCore {\
     class ItemInfo: HeadgearItem {\
         mass = 40;\
         class HitpointsProtectionInfo {\
@@ -80,70 +107,26 @@ class type: ItemCore {\
     };\
 }
 
-HELMET(BRM_M1H_SWDG_GREEN,2);
-HELMET(BRM_M56_GREEN,2);
-HELMET(BRM_VZ53_GREEN,2);
-HELMET(BRM_LWH_MASK_COMS_GREEN,6);
-HELMET(BRM_PASGT_NVSWDG_COMS_GREEN,6);
+HELMET_HP(Alpine_Helmet_IA,6);
+HELMET_HP(AOR2_Helmet_IA,6);
+HELMET_HP(Arid_Helmet_IA,6);
+HELMET_HP(DTS_Helmet_IA,6);
 
-HELMET_COMS(BRM_ACH_MASK_COMS_GREEN,6);
-HELMET_COMS(BRM_6B7_MASK_COMS_GREEN,6);
-
-class BRM_CVCSF_GREEN: ItemCore {
-    ace_hearing_lowerVolume = 0.5;
+class VSM_OGA_Helmet1: H_HelmetB {
     ace_hearing_protection = 0.75;
-    class ItemInfo: HeadgearItem {
-        mass = 40;
-        class HitpointsProtectionInfo {
-            class Head {
-                armor = 6;
-            };
-        };
-    };
 };
-class BRM_CVCSFMASK_GREEN: BRM_CVCSF_GREEN {
-    ACE_Protection = 1;
-    class ItemInfo: HeadgearItem {
-        mass = 40;
-        class HitpointsProtectionInfo {
-            class Head {
-                armor = 6;
-            };
-        };
-    };
+class VSM_OGA_OD_Helmet1: H_HelmetB {
+    ace_hearing_protection = 0.75;
 };
-
-class BRM_BeretPELTOR_Blue: ItemCore {
-    ace_hearing_lowerVolume = 0.5;
+class VSM_OGA_Helmet2: H_HelmetB {
+    ace_hearing_protection = 0.75;
+};
+class VSM_OGA_OD_Helmet2: H_HelmetB {
     ace_hearing_protection = 0.75;
 };
 
-class BRM_capPELTOR_Black: ItemCore {
-    ace_hearing_lowerVolume = 0.5;
-    ace_hearing_protection = 0.75;
-};
-class BRM_PELTOR_Tglasses: BRM_capPELTOR_Black {
-    ACE_Protection = 1;
-    class ItemInfo: HeadgearItem {
-        mass = 4;
-    };
-};
-class BRM_PELTOR: BRM_PELTOR_Tglasses {
-    ACE_Protection = 0;
-};
-
-class BRM_ShemPakolMASK: ItemCore {
-    ACE_Protection = 1;
-};
-class BRM_ShemPakol: BRM_ShemPakolMASK {
-    ACE_Protection = 0;
-};
-
-class BRM_SPH4_GREEN: ItemCore {
-    ace_hearing_lowerVolume = 0.6;
-    ace_hearing_protection = 0.85;
-};
-class BRM_SPH4V_GREEN: BRM_SPH4_GREEN {
-    ACE_Protection = 1;
-};
-*/
+HELMET(VSM_Peltor_AOR1,15);
+HELMET(VSM_Peltor_coyote,15);
+HELMET(VSM_Peltor_M81,15);
+HELMET(VSM_Peltor_OCP,15);
+HELMET(VSM_Peltor_OD,15);
